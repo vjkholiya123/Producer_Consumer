@@ -1,0 +1,22 @@
+PRODUCER-CONSUMER PROBLEM
+
+It is one of the problem of multi-process synchronization also known in the name of bounded-buffer problem. According 
+to this problem there are two processes or active persons i.e producer and a consumer.
+
+Producer is going to produce certain items and at that period of time while the producer is producing there are 
+some constraint which are : 
+1. No other producer is allowed to produce items at that time.
+2. No consumer can consume the item.
+Producer has the role to fill the buffer and the role of the consumer is to remove an item from the buffer.
+
+When the consumer is consuming then the constraints are:
+1. No other consumer can consume the data from the buffer.
+2. No producer can produce the data.
+
+Both producer and consumer processes need to be synchronized and we have different approaches to acheive it which are:
+1. Using semaphores
+2. Using monitors
+3. Without semaphore or monitors
+
+Using the above 3 methods we can solve this producer consumer problem without getting into a race-around condition
+which ultimately leads to deadlock.
